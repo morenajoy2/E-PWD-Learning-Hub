@@ -1,0 +1,31 @@
+#class-section{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0px;
+}
+
+#class-section td, #class-section th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#class-section tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#class-section tr:hover {
+    background-color: #ddd;
+}
+
+#edit-btn {
+    background-color: blue;
+}
+
+#delete-btn {
+    background-color: red;
+}
+
+#add-class-section-btn {
+    margin-top: 20px;
+}

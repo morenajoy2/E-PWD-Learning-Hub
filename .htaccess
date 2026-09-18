@@ -1,0 +1,87 @@
+RewriteEngine On
+RewriteBase /EPWD/
+
+RewriteRule ^$ Login [L,R=302]
+
+
+RewriteRule ^admin/content/management/?$ admin/content/management.php [L,QSA]
+RewriteRule ^admin/content/add/?$ admin/content/add.php [L,QSA]
+RewriteRule ^admin/content/view/([0-9]+)/?$ admin/content/view.php?content_id=$1 [L,QSA]
+RewriteRule ^admin/content/edit/([0-9]+)/?$ admin/content/edit.php?id=$1 [L,QSA]
+RewriteRule ^admin/content/delete/([0-9]+)/?$ admin/content/delete.php?content_id=$1 [L,QSA]
+
+RewriteRule ^admin/announcement/management/?$ admin/announcement/management.php [L,QSA]
+RewriteRule ^admin/announcement/add/?$ admin/announcement/add.php [L,QSA]
+RewriteRule ^admin/announcement/view/([0-9]+)/?$ admin/announcement/view.php?announcement_id=$1 [L,QSA]
+RewriteRule ^admin/announcement/edit/([0-9]+)/?$ admin/announcement/edit.php?id=$1 [L,QSA]
+RewriteRule ^admin/announcement/delete/([0-9]+)/?$ admin/announcement/delete.php?announcement_id=$1 [L,QSA]
+
+RewriteRule ^admin/event/management/?$ admin/event/management.php [L,QSA]
+RewriteRule ^admin/event/add/?$ admin/event/add.php [L,QSA]
+RewriteRule ^admin/event/view/([0-9]+)/?$ admin/event/view.php?event_id=$1 [L,QSA]
+RewriteRule ^admin/event/edit/([0-9]+)/?$ admin/event/edit.php?id=$1 [L,QSA]
+RewriteRule ^admin/event/delete/([0-9]+)/?$ admin/event/delete.php?event_id=$1 [L,QSA]
+
+RewriteRule ^admin/class-section/management/?$ admin/class-section/management.php [L,QSA]
+RewriteRule ^admin/class-section/add/?$ admin/class-section/add.php [L,QSA]
+RewriteRule ^admin/class-section/view/([0-9]+)/?$ admin/class-section/view.php?class_section_id=$1 [L,QSA]
+RewriteRule ^admin/class-section/edit/([0-9]+)/?$ admin/class-section/edit.php?id=$1 [L,QSA]
+RewriteRule ^admin/class-section/delete/([0-9]+)/?$ admin/class-section/delete.php?class_section_id=$1 [L,QSA]
+
+RewriteRule ^admin/user/management/?$ admin/user/management.php [L,QSA]
+RewriteRule ^admin/user/add/?$ admin/user/add.php [L,QSA]
+RewriteRule ^admin/user/view/([0-9]+)/?$ admin/user/view.php?id=$1 [L,QSA]
+RewriteRule ^admin/user/edit/([0-9]+)/?$ admin/user/edit.php?id=$1 [L,QSA]
+RewriteRule ^admin/user/delete/([0-9]+)/?$ admin/user/delete.php?id=$1 [L,QSA]
+
+
+
+
+
+
+RewriteRule ^teacher/content/management/?$ teacher/content/management.php [L,QSA]
+RewriteRule ^teacher/content/add/?$ teacher/content/add.php [L,QSA]
+RewriteRule ^teacher/content/view/([0-9]+)/?$ teacher/content/view.php?content_id=$1 [L,QSA]
+RewriteRule ^teacher/content/edit/([0-9]+)/?$ teacher/content/edit.php?id=$1 [L,QSA]
+RewriteRule ^teacher/content/delete/([0-9]+)/?$ teacher/content/delete.php?content_id=$1 [L,QSA]
+
+RewriteRule ^teacher/announcement/management/?$ teacher/announcement/management.php [L,QSA]
+RewriteRule ^teacher/announcement/add/?$ teacher/announcement/add.php [L,QSA]
+RewriteRule ^teacher/announcement/view/([0-9]+)/?$ teacher/announcement/view.php?announcement_id=$1 [L,QSA]
+RewriteRule ^teacher/announcement/edit/([0-9]+)/?$ teacher/announcement/edit.php?id=$1 [L,QSA]
+RewriteRule ^teacher/announcement/delete/([0-9]+)/?$ teacher/announcement/delete.php?announcement_id=$1 [L,QSA]
+
+RewriteRule ^teacher/event/management/?$ teacher/event/management.php [L,QSA]
+RewriteRule ^teacher/event/add/?$ teacher/event/add.php [L,QSA]
+RewriteRule ^teacher/event/view/([0-9]+)/?$ teacher/event/view.php?event_id=$1 [L,QSA]
+RewriteRule ^teacher/event/edit/([0-9]+)/?$ teacher/event/edit.php?id=$1 [L,QSA]
+RewriteRule ^teacher/event/delete/([0-9]+)/?$ teacher/event/delete.php?event_id=$1 [L,QSA]
+
+RewriteRule ^teacher/class-section/management/?$ teacher/class-section/management.php [L,QSA]
+RewriteRule ^teacher/class-section/add/?$ teacher/class-section/add.php [L,QSA]
+RewriteRule ^teacher/class-section/view/([0-9]+)/?$ teacher/class-section/view.php?class_section_id=$1 [L,QSA]
+RewriteRule ^teacher/class-section/edit/([0-9]+)/?$ teacher/class-section/edit.php?id=$1 [L,QSA]
+RewriteRule ^teacher/class-section/delete/([0-9]+)/?$ teacher/class-section/delete.php?class_section_id=$1 [L,QSA]
+
+
+
+
+
+RewriteRule ^student/content/view/([0-9]+)/?$ student/content/view.php?content_id=$1 [L,QSA]
+
+RewriteRule ^student/announcement/view/([0-9]+)/?$ student/announcement/view.php?announcement_id=$1 [L,QSA]
+
+RewriteRule ^student/event/view/([0-9]+)/?$ student/event/view.php?event_id=$1 [L,QSA]
+
+
+
+
+
+
+RewriteRule ^parent/announcement/view/([0-9]+)/?$ parent/announcement/view.php?announcement_id=$1 [L,QSA]
+
+RewriteRule ^parent/event/view/([0-9]+)/?$ parent/event/view.php?event_id=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ $1.php [L,QSA]

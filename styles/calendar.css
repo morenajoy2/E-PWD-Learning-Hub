@@ -1,0 +1,12 @@
+.col-lg-12 {
+    position:relative;
+    margin: 0;
+}
+.col-lg-12 h1{
+    text-align: center;
+    padding:20px;
+}
+
+footer {
+    position: relative;
+}

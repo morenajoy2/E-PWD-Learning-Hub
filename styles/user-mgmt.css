@@ -1,0 +1,31 @@
+#users{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0px;
+}
+
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#users tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#users tr:hover {
+    background-color: #ddd;
+}
+
+#edit-btn {
+    background-color: blue;
+}
+
+#delete-btn {
+    background-color: red;
+}
+
+#add-user-btn {
+    margin-top: 20px;
+}

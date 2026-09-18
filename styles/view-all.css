@@ -1,0 +1,32 @@
+h2 {
+    margin: 20px 0px;
+}
+
+#quicklinks{
+    /* border-collapse: collapse; */
+    width: 50%;
+    margin: 16px 0px;
+}
+
+#quicklinks td, #quicklinks th {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* #quicklinks tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#quicklinks tr:hover {
+    background-color: #ddd;
+} */
+
+#quicklinks td:nth-child(even){
+    text-align: center;
+}
+
+
+
